@@ -12,4 +12,5 @@
     <color name="colorGroLook">#31312f</color>
     <color name="colorRed">#ff0000</color>
     <color name="colorLogin">#C5C5C5</color>
+    <color name="colorBuy">#33000000</color>
 </resources>

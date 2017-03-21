@@ -1,6 +1,7 @@
 package com.lx.abcdemo.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.lx.abcdemo.R;
@@ -28,6 +30,7 @@ import java.util.Map;
 public class BuyActivity extends AppCompatActivity implements View.OnClickListener{
     private TextView title,tv_size,tv_sum,tv_price,tv_total,tvTitle;
     private ImageView ivBack,ivLess,ivAdd;
+    private LinearLayout ll;
     private ViewPager pager;
     private View v;
     private PagerBuyAdapter pagerAdapter;
@@ -57,6 +60,8 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         ivBack = (ImageView) findViewById(R.id.include_bar_ivBack);
         ivBack.setVisibility(View.VISIBLE);
         ivBack.setOnClickListener(this);
+        ll = (LinearLayout) findViewById(R.id.include_bar_ll);
+        ll.setBackgroundColor(getResources().getColor(R.color.colorBuy));
         pager = (ViewPager) findViewById(R.id.buy_viewPager);
         bt_Go = (Button) findViewById(R.id.buy_commodity_go);
         bt_Go.setOnClickListener(this);

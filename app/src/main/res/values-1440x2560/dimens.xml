@@ -5,6 +5,7 @@
     <dimen name="xp1">1.3px</dimen>
     <dimen name="xp2">2.6px</dimen>
     <dimen name="xp3">3.9px</dimen>
+    <dimen name="xp4">5.3px</dimen>
     <dimen name="xp5">6.6px</dimen>
     <dimen name="xp9">12px</dimen>
     <dimen name="xp10">13.3px</dimen>
@@ -73,6 +74,7 @@
     <dimen name="xp192">256px</dimen>
     <dimen name="xp193">257.3px</dimen>
     <dimen name="xp200">266.6px</dimen>
+    <dimen name="xp204">272px</dimen>
     <dimen name="xp206">274.6px</dimen>
     <dimen name="xp210">280px</dimen>
     <dimen name="xp213">284px</dimen>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="@dimen/xp754"
-        android:layout_height="@dimen/xp538"
+        android:layout_height="@dimen/xp500"
         android:background="@drawable/header_bgs">
         <com.lx.abcdemo.view.MyImageView
             android:id="@+id/header_icon"

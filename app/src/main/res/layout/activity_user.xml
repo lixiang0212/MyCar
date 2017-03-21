@@ -18,14 +18,18 @@
             android:layout_width="@dimen/xp316"
             android:layout_height="@dimen/xp316" />
     </RelativeLayout>
+
     <TextView
         android:text="账户信息"
+        android:textStyle="bold"
         android:layout_marginLeft="@dimen/xp36"
         android:textSize="@dimen/xp48"
         android:textColor="@color/colorYellow"
         android:layout_marginTop="@dimen/xp46"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
     <RelativeLayout
         android:background="@color/colorWhite"
         android:layout_marginTop="@dimen/xp30"
@@ -93,6 +97,7 @@
     </RelativeLayout>
     <TextView
         android:text="个人信息"
+        android:textStyle="bold"
         android:layout_marginLeft="@dimen/xp36"
         android:textSize="@dimen/xp48"
         android:textColor="@color/colorYellow"

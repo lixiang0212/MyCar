@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:background="@color/colorGro"
     android:layout_width="match_parent"
+    android:elevation="@dimen/xp1"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -15,7 +16,7 @@
             android:textStyle="bold"
             android:layout_marginTop="@dimen/xp30"
             android:layout_marginBottom="@dimen/xp30"
-            android:text="订单编号:"
+            android:text="订单编号 : "
             android:gravity="center"
             android:textSize="@dimen/xp36"
             android:layout_marginLeft="@dimen/xp32"
@@ -23,6 +24,7 @@
             android:layout_height="match_parent"
             />
         <TextView
+            android:textStyle="bold"
             android:layout_marginTop="@dimen/xp30"
             android:layout_marginBottom="@dimen/xp30"
             android:id="@+id/pay_item_Number"
@@ -102,6 +104,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:elevation="@dimen/xp1"
         android:background="@color/colorWhite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

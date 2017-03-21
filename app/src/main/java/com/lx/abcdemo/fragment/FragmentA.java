@@ -116,7 +116,9 @@ public class FragmentA extends Fragment{
                 int position = adapter.getLetterPosition(s);
                 if (position!=-1&&position>=0&&position<data.size()) {
                     //recyclerView.scrollToPosition(position);
-                 //   manager.scrollToPosition(position);
+                 //
+
+                    //   manager.scrollToPosition(position);
                     manager.scrollToPositionWithOffset(position,0);
                    int a= manager.findFirstVisibleItemPosition();
                    int b = manager.findLastVisibleItemPosition();

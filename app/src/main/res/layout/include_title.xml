@@ -2,8 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:id="@+id/include_bar_ll"
     android:background="@color/colorBlank"
-    android:layout_height="@dimen/xp144">
+    android:layout_height="@dimen/xp204">
+    <View
+        android:background="@color/colorBlank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp60"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/xp143">

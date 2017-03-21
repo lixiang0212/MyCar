@@ -18,6 +18,7 @@
             android:layout_height="@dimen/xp210" />
     </RelativeLayout>
     <TextView
+        android:textStyle="bold"
         android:layout_marginLeft="@dimen/xp49"
         android:text="验证码登陆"
         android:textSize="@dimen/xp40"
@@ -89,6 +90,7 @@
             />
     </RelativeLayout>
     <TextView
+        android:textStyle="bold"
         android:text="设置密码"
         android:textSize="@dimen/xp40"
         android:layout_marginLeft="@dimen/xp49"
