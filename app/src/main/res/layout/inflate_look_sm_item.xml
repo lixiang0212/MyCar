@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/xp240"
+    android:layout_marginRight="@dimen/xp18"
+    android:layout_height="@dimen/xp150">
+    <ImageView
+        android:background="@drawable/frame_selected"
+        android:padding="@dimen/xp3"
+        android:id="@+id/inflate_look_sm_iv"
+        android:layout_width="@dimen/xp240"
+        android:layout_height="@dimen/xp150" />
+</RelativeLayout>

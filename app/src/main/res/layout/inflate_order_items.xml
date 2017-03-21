@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/xp30"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp126">
+        <TextView
+            android:textStyle="bold"
+            android:text="订单编号: "
+            android:gravity="center"
+            android:textSize="@dimen/xp40"
+            android:layout_marginLeft="@dimen/xp50"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/order_item_Number"
+            android:text="1234567890"
+            android:textColor="@color/colorYellow"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/xp40"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            />
+        <ImageView
+            android:id="@+id/order_item_ivStatus"
+            android:layout_marginRight="@dimen/xp50"
+            android:layout_gravity="end"
+            android:src="@drawable/completed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/colorGro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp280">
+    <ImageView
+        android:src="@drawable/babosi"
+        android:id="@+id/order_item_Icon"
+        android:layout_marginTop="@dimen/xp30"
+        android:layout_marginLeft="@dimen/xp50"
+        android:layout_width="@dimen/xp200"
+        android:layout_height="@dimen/xp200" />
+        <TextView
+            android:id="@+id/order_item_Title"
+            android:textSize="@dimen/xp40"
+            android:layout_toRightOf="@+id/order_item_Icon"
+            android:layout_marginRight="@dimen/xp50"
+            android:layout_marginLeft="@dimen/xp50"
+            android:gravity="center_vertical"
+            android:text="长城哈弗M4扶手箱H1M2绚丽C2专用汽车中央手扶箱改装配件"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xp140" />
+        <TextView
+            android:id="@+id/order_item_Price"
+            android:text="¥31.80"
+            android:textSize="@dimen/xp40"
+            android:textColor="@color/colorRed"
+            android:layout_below="@id/order_item_Title"
+            android:layout_toRightOf="@id/order_item_Icon"
+            android:layout_marginLeft="@dimen/xp50"
+            android:layout_marginRight="@dimen/xp50"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp60" />
+        <TextView
+            android:id="@+id/order_item_Sum"
+            android:text="x20"
+            android:textSize="@dimen/xp40"
+            android:textColor="@color/colorGroT"
+            android:layout_below="@id/order_item_Title"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/xp50"
+            android:layout_marginRight="@dimen/xp50"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp60" />
+        <TextView
+            android:id="@+id/order_item_Total"
+            android:text="合计:¥999.00"
+            android:textSize="@dimen/xp36"
+            android:textColor="@color/colorRed"
+            android:layout_below="@id/order_item_Sum"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/xp50"
+            android:layout_marginRight="@dimen/xp50"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp60" />
+    </RelativeLayout>
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp30"/>
+</LinearLayout>

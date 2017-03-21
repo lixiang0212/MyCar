@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorGro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/xp30"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/xp30"
+            android:layout_marginBottom="@dimen/xp30"
+            android:text="订单编号:"
+            android:gravity="center"
+            android:textSize="@dimen/xp36"
+            android:layout_marginLeft="@dimen/xp32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/xp30"
+            android:layout_marginBottom="@dimen/xp30"
+            android:id="@+id/pay_item_Number"
+            android:text="1234567890"
+            android:textColor="@color/colorYellow"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/xp36"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:id="@+id/pay_item_ivStatus"
+            android:layout_marginRight="@dimen/xp32"
+            android:layout_gravity="end"
+            android:src="@drawable/pending_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_item_rl"
+        android:background="@color/colorGro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp280">
+        <ImageView
+            android:src="@drawable/babosi"
+            android:id="@+id/pay_item_Icon"
+            android:layout_marginTop="@dimen/xp25"
+            android:layout_marginLeft="@dimen/xp36"
+            android:layout_width="@dimen/xp206"
+            android:layout_height="@dimen/xp206" />
+        <TextView
+            android:id="@+id/pay_item_Title"
+            android:textSize="@dimen/xp36"
+            android:layout_toRightOf="@+id/pay_item_Icon"
+            android:layout_marginRight="@dimen/xp36"
+            android:layout_marginLeft="@dimen/xp36"
+            android:layout_marginTop="@dimen/xp27"
+            android:gravity="center_vertical"
+            android:text="长城哈弗M4扶手箱H1M2绚丽C2专用汽车中央手扶箱改装配件"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/xp45"
+            android:id="@+id/pay_item_Price"
+            android:text="¥31.80"
+            android:textSize="@dimen/xp35"
+            android:textColor="@color/colorRed"
+            android:layout_below="@id/pay_item_Title"
+            android:layout_toRightOf="@id/pay_item_Icon"
+            android:layout_marginLeft="@dimen/xp36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="142px"
+            android:id="@+id/pay_item_Sum"
+            android:text="x20"
+            android:textSize="@dimen/xp40"
+            android:textColor="@color/colorGroT"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/xp36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/xp21"
+            android:id="@+id/pay_item_Total"
+            android:text="合计:¥999.00"
+            android:textSize="@dimen/xp36"
+            android:textColor="@color/colorRed"
+            android:layout_below="@id/pay_item_Sum"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/xp36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pay_item_go"
+            android:layout_marginRight="@dimen/xp32"
+            android:background="@drawable/pay_item_btn_bg"
+            android:gravity="center"
+            android:textSize="@dimen/xp30"
+            android:layout_marginTop="@dimen/xp16"
+            android:layout_marginBottom="@dimen/xp16"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorYellow"
+            android:text="提醒发货"
+            android:layout_width="@dimen/xp150"
+            android:layout_height="@dimen/xp62" />
+    </RelativeLayout>
+
+</LinearLayout>

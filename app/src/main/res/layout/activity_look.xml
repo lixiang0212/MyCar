@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_look"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414"
+    tools:context="com.lx.abcdemo.activity.LookActivity">
+    <include layout="@layout/include_title"/>
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/colorGroLook"
+        android:layout_marginTop="@dimen/xp30"
+        android:id="@+id/look_sm_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp150"/>
+     <View
+         android:layout_weight="1"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/look_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp675"/>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/xp20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <LinearLayout
+            android:layout_marginTop="@dimen/xp30"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="当前车型: "
+                android:layout_marginLeft="@dimen/xp30"
+                android:textSize="@dimen/xp40"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/look_show_selected"
+                android:textColor="@color/colorYellow"
+                android:textSize="@dimen/xp40"
+                android:text="丰田-卡罗拉-1.8L 手动GLX-i"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="@dimen/xp50"
+                android:src="@drawable/shop"
+                android:id="@+id/look_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/xp50"
+                android:layout_below="@+id/look_iv"
+                android:textColor="@color/colorYellow"
+                android:textSize="@dimen/xp40"
+                android:text="配件选购"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/location_item_relative"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp250">
+        <TextView
+            android:layout_marginLeft="@dimen/xp36"
+            android:id="@+id/location_item_tvName"
+            android:text="老司机"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/xp48"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp110" />
+        <TextView
+            android:layout_toRightOf="@id/location_item_tvName"
+            android:layout_marginLeft="@dimen/xp60"
+            android:id="@+id/location_item_tvNumber"
+            android:text="18180112365"
+            android:gravity="center"
+            android:textSize="@dimen/xp48"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp110" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/location_item_default"
+            android:text="默认"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/location_default_bg"
+            android:textSize="@dimen/xp32"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/xp240"
+            android:layout_marginTop="@dimen/xp30"
+            android:layout_width="@dimen/xp100"
+            android:layout_height="@dimen/xp50" />
+        <TextView
+            android:layout_below="@+id/location_item_tvName"
+            android:layout_marginLeft="@dimen/xp36"
+            android:id="@+id/location_item_tvAddress"
+            android:text="四川省成都市武侯区一环路南一段普利大厦A座802室塘沽科技时代"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/xp40"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xp140" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp118">
+      <ImageView
+          android:id="@+id/location_item_defaultIcon"
+          android:layout_marginLeft="@dimen/xp42"
+          android:layout_marginTop="@dimen/xp34"
+          android:layout_marginBottom="@dimen/xp34"
+          android:src="@drawable/normal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/location_item_defaultAddress"
+            android:layout_marginLeft="@dimen/xp30"
+            android:text="默认地址"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/xp36"
+            android:layout_toRightOf="@id/location_item_defaultIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/location_item_tvDelete"
+            android:text="删除"
+            android:textSize="@dimen/xp36"
+            android:textColor="@color/colorYellow"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/xp42"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/location_item_deleteIcon"
+            android:layout_marginRight="@dimen/xp15"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete"
+            android:layout_toLeftOf="@+id/location_item_tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/location_item_tvSet"
+            android:text="编辑"
+            android:textSize="@dimen/xp36"
+            android:textColor="@color/colorYellow"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/location_item_deleteIcon"
+            android:layout_marginRight="@dimen/xp36"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="@dimen/xp15"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit"
+            android:layout_toLeftOf="@+id/location_item_tvSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

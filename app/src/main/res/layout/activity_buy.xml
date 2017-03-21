@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGro"
+    tools:context="com.lx.abcdemo.activity.BuyActivity">
+    <include layout="@layout/include_title"/>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/buy_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:id="@+id/buy_relative"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xp120">
+            <com.lx.abcdemo.view.CircleView
+                android:visibility="gone"
+                android:id="@+id/circle_2"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/xp50"
+                android:layout_height="@dimen/xp50" />
+            <com.lx.abcdemo.view.CircleView
+                android:visibility="gone"
+                android:id="@+id/circle_1"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/circle_2"
+                android:layout_width="@dimen/xp50"
+                android:layout_height="@dimen/xp50" />
+            <com.lx.abcdemo.view.CircleView
+                android:visibility="gone"
+                android:id="@+id/circle_3"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/circle_2"
+                android:layout_width="@dimen/xp50"
+                android:layout_height="@dimen/xp50" />
+            <com.lx.abcdemo.view.CircleView
+                android:visibility="gone"
+                android:id="@+id/circle_0"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/circle_1"
+                android:layout_width="@dimen/xp50"
+                android:layout_height="@dimen/xp50" />
+            <com.lx.abcdemo.view.CircleView
+                android:visibility="gone"
+                android:id="@+id/circle_4"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/circle_3"
+                android:layout_width="@dimen/xp50"
+                android:layout_height="@dimen/xp50" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/xp21"
+        android:background="@color/colorWhite"
+        android:textColor="#3C3C3C"
+        android:paddingLeft="@dimen/xp40"
+        android:paddingRight="@dimen/xp40"
+        android:textSize="@dimen/xp40"
+        android:gravity="center_vertical"
+        android:text="长城哈弗M4扶手箱H1M2绚丽C2专用汽车中央手扶箱改装配件免打孔"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp138"
+        android:id="@+id/buy_commodity_title" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp80">
+
+        <TextView
+            android:id="@+id/buy_commodity_price"
+            android:text="¥168.9"
+            android:textSize="@dimen/xp40"
+            android:textColor="@color/colorRed"
+            android:paddingLeft="@dimen/xp40"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/xp36"
+            android:src="@drawable/in_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/xp30"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp142">
+        <TextView
+            android:layout_marginLeft="@dimen/xp40"
+            android:textColor="#C7C7C7"
+            android:text="已选"
+            android:textSize="@dimen/xp36"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginLeft="@dimen/xp35"
+            android:id="@+id/buy_commodity_kind"
+            android:text="摄像头"
+            android:textColor="#3C3C3C"
+            android:textSize="@dimen/xp36"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:src="@drawable/less"
+            android:id="@+id/buy_commodity_less"
+            android:gravity="center"
+            android:layout_width="@dimen/xp30"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/buy_commodity_size"
+            android:text="1"
+            android:textSize="@dimen/xp40"
+            android:textColor="#3C3C3C"
+            android:gravity="center"
+            android:layout_width="@dimen/xp120"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/add"
+            android:layout_marginRight="@dimen/xp60"
+            android:id="@+id/buy_commodity_adds"
+            android:layout_width="@dimen/xp30"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/xp30"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp193">
+        <TextView
+            android:layout_marginTop="@dimen/xp40"
+            android:id="@+id/aaa"
+            android:textColor="#C7C7C7"
+            android:text="送至"
+            android:layout_marginLeft="@dimen/xp40"
+            android:textSize="@dimen/xp36"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginTop="@dimen/xp50"
+            android:layout_toRightOf="@+id/aaa"
+            android:layout_marginLeft="@dimen/xp30"
+            android:src="@drawable/position"
+            android:id="@+id/buy_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/xp30"
+            android:layout_marginTop="@dimen/xp40"
+            android:layout_toRightOf="@+id/buy_icon"
+            android:id="@+id/buy_commodity_location"
+            android:textSize="@dimen/xp36"
+            android:textColor="#3C3C3C"
+            android:singleLine="true"
+            android:lines="1"
+            android:text="成都市武侯区一环路南一段普利大厦803"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:layout_marginTop="@dimen/xp25"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/xp36"
+            android:id="@+id/buy_commodity_now"
+            android:layout_below="@+id/buy_commodity_location"
+            android:layout_toRightOf="@id/aaa"
+            android:layout_marginLeft="@dimen/xp40"
+            android:singleLine="true"
+            android:lines="1"
+            android:text="现货"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/xp36"
+            android:layout_below="@+id/buy_commodity_location"
+            android:id="@+id/buy_commodity_time"
+            android:layout_marginLeft="@dimen/xp40"
+            android:layout_toRightOf="@id/buy_commodity_now"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:lines="1"
+            android:textColor="#C7C7C7"
+            android:text="12:00前下单  预计明天下午送达 "
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/xp25"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+       android:layout_marginTop="@dimen/xp120"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp144">
+
+        <TextView
+            android:textColor="#3C3C3C"
+            android:layout_toRightOf="@+id/ddd"
+            android:id="@+id/buy_commodity_sum"
+            android:text="1个"
+            android:textSize="@dimen/xp40"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp73" />
+        <TextView
+            android:layout_marginLeft="@dimen/xp40"
+            android:id="@+id/total"
+            android:layout_below="@+id/ddd"
+            android:text="共计："
+            android:textSize="@dimen/xp40"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp73" />
+        <TextView
+            android:id="@+id/buy_commodity_total"
+            android:layout_toRightOf="@+id/total"
+            android:layout_below="@+id/ddd"
+            android:text="¥168.9"
+            android:textSize="@dimen/xp40"
+            android:textColor="@color/colorRed"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp73" />
+        <Button
+            android:id="@+id/buy_commodity_go"
+            android:textSize="@dimen/xp48"
+            android:gravity="center"
+            android:background="@color/colorRed"
+            android:textColor="@color/colorWhite"
+            android:text="确定下单"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/xp330"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="#3C3C3C"
+            android:id="@+id/ddd"
+            android:text="数量: "
+            android:textSize="@dimen/xp40"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xp73"
+            android:layout_marginLeft="@dimen/xp40" />
+    </RelativeLayout>
+</LinearLayout>

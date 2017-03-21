@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorGro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lx.abcdemo.activity.PayActivity">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/xp30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp158">
+    <ImageView
+        android:layout_marginLeft="@dimen/xp60"
+        android:src="@drawable/wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        <TextView
+            android:text="微信支付"
+            android:textColor="#3C3C3C"
+            android:textSize="@dimen/xp40"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xp77"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/arrow_rights"
+            android:layout_marginRight="@dimen/xp40"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp158">
+        <ImageView
+            android:layout_marginLeft="@dimen/xp48"
+            android:src="@drawable/alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="支付宝支付"
+            android:textColor="#3C3C3C"
+            android:textSize="@dimen/xp40"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xp29"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/arrow_rights"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/xp40"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp158">
+        <ImageView
+            android:layout_marginLeft="@dimen/xp53"
+            android:src="@drawable/unionpay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="银联支付"
+            android:textColor="#3C3C3C"
+            android:textSize="@dimen/xp40"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/xp70"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="@dimen/xp40"
+            android:src="@drawable/arrow_rights"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

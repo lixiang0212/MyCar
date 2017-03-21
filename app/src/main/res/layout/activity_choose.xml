@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGro"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lx.abcdemo.activity.ChooseActivity">
+    <include layout="@layout/include_title"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/xp30"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xp88">
+            <EditText
+                android:drawableStart="@drawable/search"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="@dimen/xp40"
+                android:background="@drawable/choose_et_bg"
+                android:id="@+id/choose_et"
+                android:textColor="#F0EFF5"
+                android:layout_marginLeft="@dimen/xp36"
+                android:layout_marginRight="@dimen/xp36"
+                android:hint="搜索分类名称"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/xp30"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/choose_listView"
+                android:layout_width="@dimen/xp386"
+                android:layout_height="match_parent"/>
+            <ListView
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/xp45"
+                android:id="@+id/choose_listViewT"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

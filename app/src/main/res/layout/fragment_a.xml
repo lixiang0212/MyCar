@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.lx.abcdemo.fragment.FragmentA">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+                android:layout_marginBottom="@dimen/xp20"
+                android:layout_marginTop="@dimen/xp30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xp88">
+                <EditText
+                    android:textSize="@dimen/xp40"
+                    android:background="@drawable/fragment_et_bg"
+                    android:id="@+id/fragment_a_et"
+                    android:textColor="@color/colorWhite"
+                    android:hint="请输入汽车品牌"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/xp866"
+                    android:layout_height="match_parent" />
+            <ImageView
+                android:layout_marginRight="@dimen/xp692"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/fragment_a_findIv1" />
+            <ImageView
+                android:visibility="invisible"
+                android:layout_marginLeft="@dimen/xp130"
+                android:src="@drawable/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/fragment_a_findIv2" />
+        </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.lx.abcdemo.view.SideBar
+        android:id="@+id/sideBar"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/xp118"
+        android:layout_marginBottom="@dimen/xp40"
+        android:layout_width="@dimen/xp73"
+        android:layout_height="match_parent" />
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:id="@+id/sideBar_letter"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+</FrameLayout>

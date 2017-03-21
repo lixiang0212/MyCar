@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/xp80"
+    android:text="A"
+    android:background="@drawable/temp_bg"
+    android:textColor="@color/colorBlank"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/xp36"
+    android:paddingLeft="@dimen/xp40"
+    android:textStyle="bold"
+    android:id="@+id/inflate_temp_name"
+    >
+
+</TextView>

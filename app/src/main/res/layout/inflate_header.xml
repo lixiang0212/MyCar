@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/inflate_header_name"
+    android:background="@color/colorWhite"
+    android:layout_height="@dimen/xp480">
+    <TextView
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热门品牌"
+        android:layout_marginBottom="@dimen/xp10"
+        android:textSize="@dimen/xp44"
+        android:textColor="@color/colorBlank"
+        android:paddingLeft="@dimen/xp60"
+        />
+    <GridView
+        android:paddingRight="@dimen/xp73"
+        android:paddingLeft="@dimen/xp73"
+        android:background="@color/colorWhite"
+        android:horizontalSpacing="@dimen/xp70"
+        android:verticalSpacing="0dp"
+        android:id="@+id/gridView"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

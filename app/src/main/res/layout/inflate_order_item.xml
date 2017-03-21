@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:text="订单编号："
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/order_item_number"
+                android:text="1234567890"
+                android:textColor="@color/colorYellow"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/order_item_status"
+                android:text="未支付"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:background="@color/colorWhite"
+                android:id="@+id/order_item_iv"
+                android:src="@drawable/aodi"
+                android:layout_margin="10dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_margin="2dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/order_item_title"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:text="长城哈弗M4扶手箱H1M2绚丽C2专用汽车中央手扶箱改装配件"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp">
+                    <TextView
+                        android:id="@+id/order_item_price"
+                        android:text="¥31.80"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorRed"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                    <TextView
+                        android:id="@+id/order_item_size"
+                        android:layout_alignParentRight="true"
+                        android:text="x20"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGroT"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/order_item_total"
+                    android:text="合计：¥999.00"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorRed"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:text="送达倒计时"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_toLeftOf="@+id/order_item_time"
+                android:text="剩余："
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="@color/colorYellow"
+                android:id="@+id/order_item_time"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:text="23时59分59秒"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="30dp"
+        android:layout_height="170dp">
+        <CheckBox
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</LinearLayout>
