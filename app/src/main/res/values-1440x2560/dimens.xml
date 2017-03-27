@@ -38,6 +38,7 @@
     <dimen name="xp60">80px</dimen>
     <dimen name="xp62">82.6px</dimen>
     <dimen name="xp65">86.6px</dimen>
+    <dimen name="xp68">90.6px</dimen>
     <dimen name="xp69">92px</dimen>
     <dimen name="xp70">93.3px</dimen>
     <dimen name="xp72">96px</dimen>
@@ -81,6 +82,8 @@
     <dimen name="xp220">293.3px</dimen>
     <dimen name="xp240">320px</dimen>
     <dimen name="xp250">333.3px</dimen>
+    <dimen name="xp255">340px</dimen>
+    <dimen name="xp256">341.3px</dimen>
     <dimen name="xp272">362.6px</dimen>
     <dimen name="xp280">373.3px</dimen>
     <dimen name="xp282">376px</dimen>

@@ -12,8 +12,7 @@ public class CircleView extends View {
 
     private Paint paint;
     private int color;
-    private float x=18,y=18,r=18;
-
+    private float x;
     public CircleView(Context context) {
         this(context,null);
     }
@@ -24,6 +23,8 @@ public class CircleView extends View {
 
     public CircleView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        paint =new Paint();
+        paint.setAntiAlias(true);
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.CircleView);
         color = array.getColor(R.styleable.CircleView_color,context.getResources().getColor(R.color.colorGro));
         array.recycle();
@@ -31,9 +32,9 @@ public class CircleView extends View {
 
     protected void onDraw(Canvas canvas){
         super.onDraw(canvas);
-        paint = new Paint();
+        x = getWidth();
         paint.setColor(color);
-        canvas.drawCircle(x,y,r,paint);
+        canvas.drawCircle(x/2,x/2,x/2,paint);
     }
 
     @Override
@@ -46,23 +47,6 @@ public class CircleView extends View {
         this.x = x;
     }
 
-    public float getR() {
-        return r;
-    }
-
-    public void setR(float r) {
-        this.r = r;
-    }
-
-    @Override
-    public float getY() {
-        return y;
-    }
-
-    @Override
-    public void setY(float y) {
-        this.y = y;
-    }
 
     public int getColor() {
         return color;

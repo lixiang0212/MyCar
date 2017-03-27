@@ -2,6 +2,8 @@ package com.lx.abcdemo.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +22,7 @@ import com.lx.abcdemo.aliplay.AliPay;
 import com.lx.abcdemo.fragment.FragmentBuy;
 import com.lx.abcdemo.info.CarProduct;
 import com.lx.abcdemo.info.Order;
+import com.lx.abcdemo.view.CircleTextView;
 import com.lx.abcdemo.view.CircleView;
 
 import java.math.BigDecimal;
@@ -30,6 +33,7 @@ import java.util.Map;
 public class BuyActivity extends AppCompatActivity implements View.OnClickListener{
     private TextView title,tv_size,tv_sum,tv_price,tv_total,tvTitle;
     private ImageView ivBack,ivLess,ivAdd;
+    private CircleTextView circleTextView;
     private LinearLayout ll;
     private ViewPager pager;
     private View v;
@@ -41,6 +45,16 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
     private int id[]={R.drawable.aodi,R.drawable.babosi,R.drawable.asidunmading,R.drawable.baowo,R.drawable.beiqihuansu};
     private int cid[]={R.id.circle_0,R.id.circle_1,R.id.circle_2,R.id.circle_3,R.id.circle_4};
     private CarProduct car;
+    private Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what==0){
+                circleTextView.setText((msg.arg1+1)+"");
+                circleTextView.invalidate();
+            }
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +64,6 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         initData();
         addView();
     }
-
     private void initView() {
         inflater = LayoutInflater.from(this);
         fragments = new ArrayList<>();
@@ -60,6 +73,7 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         ivBack = (ImageView) findViewById(R.id.include_bar_ivBack);
         ivBack.setVisibility(View.VISIBLE);
         ivBack.setOnClickListener(this);
+        circleTextView = (CircleTextView) findViewById(R.id.buy_circleTextView);
         ll = (LinearLayout) findViewById(R.id.include_bar_ll);
         ll.setBackgroundColor(getResources().getColor(R.color.colorBuy));
         pager = (ViewPager) findViewById(R.id.buy_viewPager);
@@ -74,7 +88,7 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
         tv_price = (TextView) findViewById(R.id.buy_commodity_price);
         tv_total = (TextView) findViewById(R.id.buy_commodity_total);
         tvTitle = (TextView) findViewById(R.id.buy_commodity_title);
-
+        /*初始化当前界面的数据---从外面传进来的*/
         if (car!=null){
             tvTitle.setText(car.getName());
             tv_price.setText("¥"+car.getPrice());
@@ -99,12 +113,15 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
             }
             @Override
             public void onPageSelected(int position) {
-                Log.i("VVV","position"+position);
+                Message message = new Message();
+                message.what=0;
+                message.arg1 = position;
+                handler.sendMessage(message);
                 for (int i = 0;i<circleViews.size();i++){
                     CircleView view = circleViews.get(i);
                     view.setVisibility(View.VISIBLE);
                     if(i==position){
-                        view.setColor(getResources().getColor(R.color.colorRed));
+                        view.setColor(getResources().getColor(R.color.colorYellow));
                         view.invalidate();
                     }else {
                         view.setColor(getResources().getColor(R.color.colorGro));
@@ -117,17 +134,15 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
 
             }
         });
+        /*初始化下标小球的颜色*/
         for (int i = 0;i<circleViews.size();i++){
             CircleView view = circleViews.get(i);
             view.setVisibility(View.VISIBLE);
-            if(i==0){
-                view.setColor(getResources().getColor(R.color.colorRed));view.invalidate();
-            }else {
-                view.setColor(getResources().getColor(R.color.colorGro));view.invalidate();
-            }
+            if(i==0){view.setColor(getResources().getColor(R.color.colorYellow));view.invalidate();}
+            else {view.setColor(getResources().getColor(R.color.colorGro));view.invalidate();}
         }
     }
-    //AlertDialog的自定义视图和监听
+    /*AlertDialog的自定义视图和监听*/
     private void addView() {
         v = inflater.inflate(R.layout.inflate_buy_go,null);
         TextView zhi = (TextView) v.findViewById(R.id.inflate_buy_zhi);
@@ -147,7 +162,7 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
             }
         });
     }
-    //按钮监听
+    /*按钮监听*/
     @Override
     public void onClick(View view) {
         String s = tv_size.getText().toString();
@@ -189,6 +204,7 @@ public class BuyActivity extends AppCompatActivity implements View.OnClickListen
                 break;
         }
     }
+    /*单位换算*/
     public static double mul(double d,int n){
         BigDecimal bd = new BigDecimal(Double.toString(d));
         BigDecimal bd2 = new BigDecimal(n);

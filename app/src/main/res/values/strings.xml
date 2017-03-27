@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one">奥迪</string>
+    <string name="two">奥迪R8</string>
+    <string name="three">2017款 1.2T 手动GLX-i</string>
+
 </resources>

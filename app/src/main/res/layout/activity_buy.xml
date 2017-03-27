@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,43 +24,63 @@
                 android:id="@+id/buy_relative"
                 android:layout_alignParentBottom="true"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/xp120">
+                android:layout_height="@dimen/xp150">
                 <com.lx.abcdemo.view.CircleView
-                    android:visibility="gone"
-                    android:id="@+id/circle_2"
-                    android:layout_centerInParent="true"
-                    android:layout_width="@dimen/xp50"
-                    android:layout_height="@dimen/xp50" />
-                <com.lx.abcdemo.view.CircleView
-                    android:visibility="gone"
-                    android:id="@+id/circle_1"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/circle_2"
-                    android:layout_width="@dimen/xp50"
-                    android:layout_height="@dimen/xp50" />
-                <com.lx.abcdemo.view.CircleView
-                    android:visibility="gone"
-                    android:id="@+id/circle_3"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/circle_2"
-                    android:layout_width="@dimen/xp50"
-                    android:layout_height="@dimen/xp50" />
-                <com.lx.abcdemo.view.CircleView
-                    android:visibility="gone"
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/xp25"
                     android:id="@+id/circle_0"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@+id/circle_1"
-                    android:layout_width="@dimen/xp50"
-                    android:layout_height="@dimen/xp50" />
+                    android:layout_width="@dimen/xp30"
+                    android:layout_height="@dimen/xp30" />
                 <com.lx.abcdemo.view.CircleView
-                    android:visibility="gone"
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/xp25"
+                    android:id="@+id/circle_1"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/circle_2"
+                    android:layout_width="@dimen/xp30"
+                    android:layout_height="@dimen/xp30" />
+                <com.lx.abcdemo.view.CircleView
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/xp25"
+                    android:id="@+id/circle_2"
+                    android:layout_centerInParent="true"
+                    android:layout_width="@dimen/xp30"
+                    android:layout_height="@dimen/xp30" />
+                <com.lx.abcdemo.view.CircleView
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/xp25"
+                    android:id="@+id/circle_3"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/circle_2"
+                    android:layout_width="@dimen/xp30"
+                    android:layout_height="@dimen/xp30" />
+                <com.lx.abcdemo.view.CircleView
+                    android:visibility="invisible"
+                    android:layout_margin="@dimen/xp25"
                     android:id="@+id/circle_4"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/circle_3"
-                    android:layout_width="@dimen/xp50"
-                    android:layout_height="@dimen/xp50" />
+                    android:layout_width="@dimen/xp30"
+                    android:layout_height="@dimen/xp30" />
             </RelativeLayout>
-
+        <com.lx.abcdemo.view.CircleTextView
+            android:id="@+id/buy_circleTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/xp80"
+            android:layout_marginBottom="@dimen/xp68"
+            app:text="1"
+            app:text1="/5"
+            app:textSize="@dimen/xp50"
+            app:textSize1="@dimen/xp48"
+            app:textColor="@color/colorYellow"
+            app:textColor1="@color/colorYellow"
+            app:circleSize="@dimen/xp53"
+            app:bgColor="#4bffffff"
+            android:layout_width="@dimen/xp120"
+            android:layout_height="@dimen/xp120" />
         </RelativeLayout>
         <include layout="@layout/include_title"
             />

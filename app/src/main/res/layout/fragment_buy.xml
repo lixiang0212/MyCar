@@ -5,7 +5,7 @@
     tools:context="com.lx.abcdemo.fragment.FragmentBuy">
 
     <ImageView
-        android:background="@color/colorWhite"
+        android:background="#af000000"
         android:id="@+id/fragment_buy_iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

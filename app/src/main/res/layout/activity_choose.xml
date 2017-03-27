@@ -10,6 +10,41 @@
     tools:context="com.lx.abcdemo.activity.ChooseActivity">
     <include layout="@layout/include_title"/>
     <LinearLayout
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xp148">
+        <Spinner
+            android:dropDownWidth="@dimen/xp330"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerOne"
+            android:gravity="center"
+            android:layout_width="@dimen/xp255"
+            android:layout_height="match_parent"/>
+        <View
+            android:background="@color/colorGroT"
+            android:layout_width="@dimen/xp1"
+            android:layout_height="match_parent"/>
+        <Spinner
+            android:spinnerMode="dialog"
+            android:id="@+id/spinnerTwo"
+            android:prompt="@string/two"
+            android:gravity="center"
+            android:layout_width="@dimen/xp256"
+            android:layout_height="match_parent"/>
+        <View
+            android:background="@color/colorGroT"
+            android:layout_width="@dimen/xp1"
+            android:layout_height="match_parent"/>
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerThree"
+            android:prompt="@string/three"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/xp88">
             <EditText
+                android:text="@string/one"
                 android:drawableStart="@drawable/search"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
